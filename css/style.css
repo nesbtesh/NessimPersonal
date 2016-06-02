@@ -41,8 +41,10 @@ video{
 }
 .person{
     position: absolute;
-    top: 48%;
+    top: 68%;
     left: 50%;
+    height: 500px;
+    width: 390px;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
