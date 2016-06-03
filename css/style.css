@@ -433,3 +433,119 @@ body {margin-top: 0px;margin-left: 0px;}
 .p8.ft2, .p2.ft2, .p20.ft2 {
    border-bottom: 1px solid black;
 }
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 200px) and (max-width : 900px) {
+    .circle{
+        width: 300px;
+        height: 300px;
+        top: 40%;
+    }
+    .person{
+        height: 300px;
+        width: 290px;
+    }
+    .dot-canvas{
+        display: none;
+    }
+    .nav ul li {
+        display: inline;
+        margin-top: 20px;
+    }
+    .nav ul{
+        top: 120px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    nav .toolpit {
+        left: 0px;
+        top: 30px;
+        position: relative;
+    }
+    .toolpit{
+        display: none;
+    }
+    .btn-floating.blue{
+        
+    }
+    .center-label {
+        top: 7%;
+    }
+    .my-name{
+        display: none;
+    }
+    #page_1 {
+        left: 23%;
+        overflow: auto;
+    }
+
+}
+@media only screen and (min-width : 460px) {
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) and (max-width : 900px) {
+    #page_1 {
+        left: 2%;
+        overflow: auto;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .hide-on-medium{
+        display: none;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .hide-on-large{
+        display: none;
+    }
+    .main-wrapper{
+        width: calc(100% - 260px);
+        width: -moz-calc(100% - 260px);
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .hide-on-extra-large{
+        display: none;
+    }
+    .main-wrapper{
+        width: calc(100% - 260px);
+        width: -moz-calc(100% - 260px);
+    }
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+
+}
