@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nessim Btesh</title>
+	<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<link href="css/nanogallery.css" rel="stylesheet" type="text/css">
+	<link href="css/themes/light/nanogallery_light.css" rel="stylesheet" type="text/css">
+  	<script type="text/javascript" src="js/jquery.nanogallery.js"></script>
+  	
+  	<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="full-width ">
+	
+ 		<h3 class="header-portafolio" style="">Projects</h3>
+	    <div id="nanoGallery3">
+	      	<a href="images/panalou/panalou1.png" data-ngthumb="images/panalou/panalou1.png" data-ngkind="album" data-ngid="1" data-ngdesc="Description1">Panalou - Dashboard</a>
+
+	    	<a href="images/panalou/panalou2.png" data-ngthumb="images/panalou/panalou2.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="10">Panalou - Data Analytics </a>
+	      	<a href="images/panalou/panalou3.jpg" data-ngthumb="images/panalou/panalou3.jpg"  data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="19">Panalou - iPhone App</a>
+	      	<a href="images/panalou/panalou4.png" data-ngthumb="images/panalou/panalou4.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="11">Panalou - Calendar </a>
+	      	<a href="images/panalou/panalou6.png" data-ngthumb="images/panalou/panalou6.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="12">Panalou - Clients CRM </a>
+	      	<a href="images/panalou/panalou7.png" data-ngthumb="images/panalou/panalou7.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="13">Panalou - Services </a>
+	      	<a href="images/panalou/panalou8.png" data-ngthumb="images/panalou/panalou8.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="14">Panalou - Point of Sale </a>
+	      	<a href="images/panalou/panalou9.png" data-ngthumb="images/panalou/panalou9.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="15">Panalou - PDF </a>
+	      	<a href="images/panalou/panalou10.png" data-ngthumb="images/panalou/panalou10.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="16">Panalou - Receipt Traking </a>
+	      	<a href="images/panalou/panalou11.png" data-ngthumb="images/panalou/panalou11.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="17">Panalou - Profile </a>
+	      	<a href="images/panalou/panalou12.png" data-ngthumb="images/panalou/panalou12.png" data-ngdesc="Image 2 description" data-ngalbumid="1" data-ngid="18">Panalou - Reservation Manager </a>
+	    </div>
+
+ 	</div>
+ 	
+
+<script src="js/jquery.cbpFWSlider.min.js"></script>
+<script>
+	$( function() {
+		$("#nanoGallery3").nanoGallery({
+      
+	      thumbnailWidth: 'auto',
+	      thumbnailHeight: 250,
+	      
+	      itemsBaseURL:'',
+	      colorScheme: 'none',
+	      thumbnailHoverEffect: [{ name: 'labelAppear75', duration: 300 }],
+	      theme: 'light',
+	      thumbnailGutterWidth : 0,
+	      thumbnailGutterHeight : 0,
+	      i18n: { thumbnailImageDescription: 'View Photo', thumbnailAlbumDescription: 'Open Album' },
+	      thumbnailLabel: { display: true, position: 'overImageOnMiddle', align: 'center' }
+    	});
+	} );
+	function myFnThumbnailOpen(items) {
+	  alert('title: ' + items[0].title);
+	  alert('image url: ' + items[0].src);
+	  alert('thumbnail url: ' + items[0].thumbImg().src);
+	  alert('numbre of images: ' + items.length);
+	}
+</script>
+</body>
+</html>
